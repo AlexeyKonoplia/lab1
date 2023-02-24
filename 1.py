@@ -13,7 +13,7 @@ arr = []
 for i in range(10, 100):
     arr.append(naive(str(line), str(i)))
 #print(timeit.default_timer() - t1)
-print(f'Число {arr.index(max(arr)) + 10} встречается {max(arr)} раз')
+print(f'Число {arr.index(max(arr)) + 10} встречается чаще всего, {max(arr)} раз')
 
 # Рабина-Карпа
 arr = []
@@ -21,7 +21,7 @@ arr = []
 for i in range(10, 100):
     arr.append(RabinKarp(str(line), str(i)))
 # print(timeit.default_timer() - t1)
-print(f'Число {arr.index(max(arr)) + 10} встречается {max(arr)} раз')
+print(f'Число {arr.index(max(arr)) + 10} встречается чаще всего, {max(arr)} раз')
 
 # Бойер-Мура
 arr = []
@@ -29,7 +29,7 @@ arr = []
 for i in range(10, 100):
     arr.append(BoyerMeow(str(line), str(i)))
 # print(timeit.default_timer() - t1)
-print(f'Число {arr.index(max(arr)) + 10} встречается {max(arr)} раз')
+print(f'Число {arr.index(max(arr)) + 10} встречается чаще всего, {max(arr)} раз')
 
 # Кнута-Морриса-Пратта
 
@@ -38,4 +38,4 @@ arr = []
 for i in range(10, 100):
     arr.append(KnutMorissPratt(str(line), str(i)))
 # print(timeit.default_timer() - t1)
-print(f'Число {arr.index(max(arr)) + 10} встречается {max(arr)} раз')
+print(f'Число {arr.index(max(arr)) + 10} встречается чаще всего, {max(arr)} раз')
