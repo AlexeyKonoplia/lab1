@@ -1,5 +1,6 @@
 import wikipedia
 import pypandoc
+from pypandoc import convert_file
 from KnutMorrisPratt import KnutMorissPratt
 
 def copypaste(name = 'Улыбка.docx', wikiname = 'Улыбка', language = 'ru'):
@@ -29,4 +30,4 @@ def copypaste(name = 'Улыбка.docx', wikiname = 'Улыбка', language = 
             copied += KnutMorissPratt(i, '1')
     return (copied / len(txt)) * 100
 
-print(copypaste())
+print(round(copypaste(), 2), '%')
